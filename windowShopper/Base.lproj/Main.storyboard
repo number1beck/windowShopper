@@ -26,19 +26,36 @@
                                     <constraint firstAttribute="height" constant="75" id="FIB-Ks-lQY"/>
                                 </constraints>
                             </imageView>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Your hourly wage" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="fmW-7I-hDB" customClass="CurrencyTxtField" customModule="windowShopper" customModuleProvider="target">
-                                <rect key="frame" x="74" y="216" width="267" height="42"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Your hourly wage" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="fmW-7I-hDB" customClass="CurrencyTxtField" customModule="windowShopper" customModuleProvider="target">
+                                <rect key="frame" x="20" y="189" width="374" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="lD1-5V-m1u"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Item price" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="8HZ-8P-iQf" customClass="CurrencyTxtField" customModule="windowShopper" customModuleProvider="target">
+                                <rect key="frame" x="20" y="254" width="374" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="vtR-Sr-Gfc"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="decimalPad" enablesReturnKeyAutomatically="YES"/>
                             </textField>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="fmW-7I-hDB" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="0sz-19-4xn"/>
                             <constraint firstItem="lCp-T5-o7D" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ACv-Zd-mrA"/>
+                            <constraint firstItem="8HZ-8P-iQf" firstAttribute="height" secondItem="fmW-7I-hDB" secondAttribute="height" id="FOt-fO-SpI"/>
                             <constraint firstItem="3CN-h1-O7D" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Ftr-Xd-OkB"/>
+                            <constraint firstItem="8HZ-8P-iQf" firstAttribute="trailing" secondItem="fmW-7I-hDB" secondAttribute="trailing" id="K1W-hs-vXI"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="fmW-7I-hDB" secondAttribute="trailing" constant="20" id="QEL-UG-XzC"/>
                             <constraint firstItem="3CN-h1-O7D" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="Syu-Ig-p0P"/>
+                            <constraint firstItem="8HZ-8P-iQf" firstAttribute="leading" secondItem="fmW-7I-hDB" secondAttribute="leading" id="TfO-Nn-5rD"/>
+                            <constraint firstItem="fmW-7I-hDB" firstAttribute="top" secondItem="lCp-T5-o7D" secondAttribute="bottom" constant="35" id="Uwu-ll-cIT"/>
+                            <constraint firstItem="8HZ-8P-iQf" firstAttribute="top" secondItem="fmW-7I-hDB" secondAttribute="bottom" constant="25" id="cWJ-H1-5Uw"/>
                             <constraint firstItem="3CN-h1-O7D" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="pp9-1H-fhr"/>
                             <constraint firstItem="lCp-T5-o7D" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="35" id="rBW-Oq-eTd"/>
                             <constraint firstAttribute="bottom" secondItem="3CN-h1-O7D" secondAttribute="bottom" id="u6m-Bu-Z1i"/>
@@ -50,6 +67,14 @@
             <point key="canvasLocation" x="18.840579710144929" y="78.348214285714278"/>
         </scene>
     </scenes>
+    <designables>
+        <designable name="8HZ-8P-iQf">
+            <size key="intrinsicContentSize" width="65" height="18.5"/>
+        </designable>
+        <designable name="fmW-7I-hDB">
+            <size key="intrinsicContentSize" width="111.5" height="18.5"/>
+        </designable>
+    </designables>
     <resources>
         <image name="windowShopperBG" width="414" height="736"/>
         <image name="windowShopperIcon" width="115" height="115"/>
