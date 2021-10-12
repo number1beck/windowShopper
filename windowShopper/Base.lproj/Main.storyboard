@@ -61,6 +61,10 @@
                             <constraint firstAttribute="bottom" secondItem="3CN-h1-O7D" secondAttribute="bottom" id="u6m-Bu-Z1i"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="priceTxt" destination="8HZ-8P-iQf" id="kKs-hc-mde"/>
+                        <outlet property="wageTxt" destination="fmW-7I-hDB" id="MJ3-Wn-JEp"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
